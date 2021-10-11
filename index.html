@@ -281,6 +281,83 @@
     </aside>
 
 </div>
+<section class="shop">
+    <h2 class="trade-tittle">Наши изделия</h2>
+    <div class="shop_cards">
+        <article class="shop_card">
+            <picture class="picture_shop shop1">
+                <source media="(min-width: 1200px)"
+                srcset="images/shop-item-desk1.jpg">
+                <source media="(min-width: 768px)"
+                srcset="images/shop-item-tablet1.jpg">
+                <source media="(min-width: 360px)"
+                srcset="images/shop-item-mobile1.jpg">
+                <img src="images/shop-item-desk1.jpg" alt="Красивая подушка розового цвета для дивана">
+            </picture>
+            <div class="shop_border">
+            <h2 class="shop_tittle">Подушки на диван</h2>
+            <div class="shop-content">Набор из двух подушек с модными принтами. Видео о создании <a class="word_link" href="#0">здесь</a></div>
+                <div class="top_price">
+                    <div class="111">
+            <div class="price1 shop_price">1000 ₽</div>
+            <div class="shop_price">800 ₽</div></div>
+            <div class="shop_button">
+                <button class="butn" style="border:none"><a class="but_link" href="#0">в магазин</a></button>
+            </div>
+            </div></div>
+        </article>
+        <article class="shop_card">
+            <picture class="picture_shop shop2">
+                <source media="(min-width: 1200px)"
+                        srcset="images/shop-item-desk2.jpg">
+                <source media="(min-width: 768px)"
+                        srcset="images/shop-item-tablet2.jpg">
+                <source media="(min-width: 360px)"
+                        srcset="images/shop-item-mobile2.jpg">
+                <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик">
+            </picture>
+            <div class="shop_border">
+            <h2 class="shop_tittle">Кукла «Зайчик»</h2>
+            <div class="shop-content">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="word_link"
+                    href="">весення серия постов</a> в блоге и несколько подкастов</div>
+                <div class="top_price">
+                    <div class="111">
+            <div class="price1 shop_price">500 ₽</div>
+            <div class="shop_price">3500 ₽</div>
+                </div>
+            <div class="shop_button">
+                <button class="butn" style="border:none"><a class="but_link" href="#0">в магазин</a></button> </div>
+            </div>
+            </div>
+        </article>
+        <article class="shop_card">
+            <picture class="picture_shop shop3">
+                <source media="(min-width: 1200px)"
+                        srcset="images/shop-item-desk3.jpg">
+                <source media="(min-width: 768px)"
+                        srcset="images/shop-item-tablet3.jpg">
+                <source media="(min-width: 360px)"
+                        srcset="images/shop-item-mobile3.jpg">
+                <img src="images/shop-item-desk3.jpg" alt="Красивая подушка розового цвета">
+            </picture>
+            <div class="shop_border">
+                <h2 class="shop_tittle">Шестиугольная рамка</h2>
+                <div class="shop-content">Необычная рамка для украшения дома из видео
+                    <a class="word_link" href="#0">«Как сделать рамку из подручных средств за 30 минут"</a>
+                </div>
+                <div class="top_price">
+                    <div class="111">
+                <div class="price1 shop_price">500 ₽</div>
+                <div class="shop_price">400 ₽</div>
+                    </div>
+                <div class="shop_button">
+                <button class="butn" style="border:none"><a class="but_link" href="#0">в магазин</a></button>
+                </div>
+            </div>
+            </div>
+        </article>
+    </div>
+</section>
 <footer class="footer">
     <adress class="adress">
         <ul class="ftr-socials">
@@ -309,5 +386,36 @@
     </adress>
     <span class="last"><a class="last-foot" href="#0">Copyright © 2009–2019 City Blog LLC.</a></span>
 </footer>
+<div class="popup popup1">
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#0" class="popup_close">X</a>
+            <h2 class="popup_tittle">Ваш ФИДБЕк</h2>
+            <form class="popup_form">
+                <div class="popup_field">Как часто вы заходите на сайт?</div>
+                <select class="popup_select" style="border: none">
+                    <option value="">Почти каждый день</option>
+                    <option value="">Раз в несколько дней</option>
+                    <option value="">Раз в несколько недель</option>
+                    <option value="">Несколько раз в год</option>
+                </select>
+                <div class="popup_field">Вы подписаны на e-mail рассылку?</div>
+                <div class="form-group">
+                    <label class="popup_input">
+                <input name="voice" type="radio" value="v1" class="popup_radio" checked>
+                        <span class="popup_radio_fake"></span>Да
+                    </label>
+                    <label>
+                <input name="voice" type="radio" value="v2" class="popup_radio">
+                        <span class="popup_radio_fake"></span>Нет
+                    </label>
+                </div>
+                <div class="popup_field">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+                <textarea class="popup_area" style="border: none" placeholder="Может, больше рецептов?"></textarea>
+                <input type="submit" class="send" style="border: none">
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

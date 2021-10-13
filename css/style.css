@@ -21,7 +21,6 @@ body {
 }
 .banner {
   background-image: url(../images/banner-bg.jpg);
-
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -613,13 +612,22 @@ section:nth-child(n + 2) {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
+  display: none;
+}
+.popup::before{
+  content: "";
   background-color: black;
   opacity: 0.6;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 .popup_body{
   position: relative;
@@ -717,7 +725,7 @@ section:nth-child(n + 2) {
   cursor: pointer;
 }
 .popup_select:focus, .popup_area:focus{
-  border: #b59f5b solid 1px;
+  outline: #b59f5b solid 1px;
 }
  textarea, select {
   -webkit-appearance: none;

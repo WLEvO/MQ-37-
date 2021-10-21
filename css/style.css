@@ -119,19 +119,18 @@ body {
 }
 .trade_trend {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .trade_blog {
-  min-width: 25%;
+  width: 24%;
   background-color: #606260;
-  min-height: 19%; /*320px*/
-  padding: 8em 1.5em 0.9em;/*130px 25px 15px*/
+  min-height: 320px;
+  padding: 130px 25px 15px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-}
-.trade_blog:nth-child(n + 2) {
-  margin-left: 5px;
 }
 .border {
   border: #b59f5b solid 3px;
@@ -191,7 +190,7 @@ body {
 }
 .main-posts {
   display: flex;
-  width: 72%;/*1200px*/
+  max-width: 1200px;
   padding: 65px 16px;
   justify-content: space-between;
   margin-left: auto;
@@ -278,7 +277,7 @@ section:nth-child(n + 2) {
   margin-top: 65px;/**/
 }
 .new-posts {
-  width: 23%;/*270px*/
+  max-width: 270px;
   padding-left: 0.5em;/*9px*/
 }
 .posts-title {
@@ -452,10 +451,10 @@ section:nth-child(n + 2) {
   font-weight: bold;
 }
 .shop{
-  padding-bottom: 1.8em;/*30px*/
+  padding-bottom: 30px;
 }
 .shop_cards{
-  justify-content: center;
+  justify-content: space-between;
   display: flex;
   width: 72%;/*1200px*/
   height: 34%;/*565px*/
@@ -463,11 +462,8 @@ section:nth-child(n + 2) {
   margin-left: auto;
   margin-right: auto;
 }
-.shop_card:nth-child(n+2){
-  margin-left: 7.2em;/*120px*/
-}
 .shop_card{
-  width: 18.7em;/*300px*/
+  max-width: 18.7em;/*300px;*/
   max-height: 28em;/*450px*/
 }
 .shop_tittle{
@@ -515,7 +511,7 @@ section:nth-child(n + 2) {
 }
 .shop_border{
   outline: #b59f5b solid 3px;
- outline-offset: 2.1em;/*30px*/
+  outline-offset: 2.1em;/*30px;*/
   min-height: 14em;/*200px*/
 }
 .footer {
@@ -730,7 +726,7 @@ section:nth-child(n + 2) {
     right: 35px;
   }
 }
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait){
+@media (min-width: 641px) and (max-width: 1200px){
   .banner-title{
     font-size: 40px;
   }
@@ -743,21 +739,61 @@ section:nth-child(n + 2) {
     top: 50px;
     right: 25px;
   }
-  .trade_blog{
-    width: 50%;
-    flex-wrap: wrap;
+  .trade_trend{
+    width: 100%;
   }
-  .trade_blog:nth-child(2n){
+  .trade_blog{
+    width: 49%;
+  }
+  .trade_blog:nth-child(2n+2){
     margin-left: 5px;
   }
-  .new-post{
-    width: 350px;
+  .trade_blog:nth-child(n + 3){
+    margin-top: 5px;
+  }
+  .main-posts{
+    max-width: 770px;
+    margin: 50px auto 0;
   }
   .posts-list{
-    width: 350px;
+    max-width: 390px;
+  }
+  .new-posts{
+     width: 270px;
     margin-left: 35px;
+   }
+  .card {
+    display: block;
+    text-align: left;
+  }
+  .card-info{
+    margin: 0;
+  }
+  .menu-tap, .caption {
+    margin-top: 15px;
+  }
+  .author-info, .card-content{
+    margin-top: 35px;
+  }
+  .shop{
+    padding: 0 40px;
+  }
+  .shop_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 770px;
+  }
+  .shop_card{
+    width: 340px;
+  }
+  .shop_card:nth-child(n+3){
+    margin-top: 35px;
+  }
+  .footer{
+    max-width: 700px;
   }
 }
-@media (min-width: 1200px){
+@media (max-width: 640px){
 
 }

@@ -793,7 +793,119 @@ section:nth-child(n + 2) {
   .footer{
     max-width: 700px;
   }
+  .popup_body{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    margin: 245px auto;
+    z-index: 2;
+    padding: 35px;
+  }
 }
 @media (max-width: 640px){
-
+  .banner{
+    display: block;
+    position: relative;
+  }
+  .nav-list{
+    display: none;
+  }
+  .burger-line{
+    visibility: visible;
+    background-color: white;
+    top: 50px;
+    right: 25px;
+    position: absolute;
+  }
+  .banner-list{
+    display: block;
+  }
+  .foto{
+    width: 270px;
+    margin: 230px auto 0;
+}
+  .banner-title{
+    font-size: 26px;
+  }
+  .trade_trend{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .trade_blog{
+    width: 100%;
+    max-height: 230px;
+    margin-bottom: 5px;
+  }
+  .main-posts{
+    display: block;
+    max-width: 360px;
+  }
+  .posts-list{
+   width: 100%;
+  }
+  .new-posts{
+    width: 100%;
+    margin-top: 45px;
+  }
+  .card {
+    display: block;
+    text-align: left;
+  }
+  .card-info{
+    margin: 0;
+  }
+  .menu-tap, .caption {
+    margin-top: 15px;
+  }
+  .author-info, .card-content{
+    margin-top: 25px;
+  }
+  .shop{
+    margin: 0 auto;
+  }
+  .shop_cards{
+    display: block;
+    max-width: 360px;
+    align-content: center;
+  }
+  .shop_card{
+    width: 100%;
+    height: 490px;
+  }
+  .shop_card{
+    margin-bottom: 25px;
+  }
+  .footer{
+    width: 100%;
+  }
+  .popup_body{
+    position: relative;
+    max-width: 320px;
+    height: 550px;
+    background-color: white;
+    margin: 60px auto;
+    z-index: 2;
+    padding: 20px;
+  }
+  .popup_area{
+    max-width: 280px;
+    width: 280px;
+    max-height: 130px;
+    height: 130px;
+    margin-bottom: 25px;
+    background-color: #f4f7f6;
+    padding: 20px 20px;
+  }
+}
+@media (max-width: 640px) and (orientation: landscape){ /*почему не работает перенос на новую строку?*/
+  .trade_trend {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+  }
+  .trade_blog{
+    width: 49%;
+  }
 }

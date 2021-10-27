@@ -191,7 +191,7 @@ body {
 .main-posts {
   display: flex;
   max-width: 1200px;
-  padding: 65px 16px;
+  padding: 65px 16px 0;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -451,16 +451,16 @@ section:nth-child(n + 2) {
   font-weight: bold;
 }
 .shop{
-  padding-bottom: 30px;
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .shop_cards{
   justify-content: space-between;
   display: flex;
-  width: 72%;/*1200px*/
-  height: 34%;/*565px*/
+  height: 565px;
   padding: 0.9em 2.1em;/*15px 35px*/
-  margin-left: auto;
-  margin-right: auto;
 }
 .shop_card{
   max-width: 18.7em;/*300px;*/
@@ -752,8 +752,9 @@ section:nth-child(n + 2) {
     margin-top: 5px;
   }
   .main-posts{
-    max-width: 770px;
+    max-width: 700px;
     margin: 50px auto 0;
+    padding: 0;
   }
   .posts-list{
     max-width: 390px;
@@ -776,13 +777,14 @@ section:nth-child(n + 2) {
     margin-top: 35px;
   }
   .shop{
-    padding: 0 40px;
+    max-width: 700px;
+    padding: 0;
   }
   .shop_cards{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 770px;
+
   }
   .shop_card{
     width: 340px;
@@ -840,7 +842,8 @@ section:nth-child(n + 2) {
   }
   .main-posts{
     display: block;
-    max-width: 360px;
+    max-width: 330px;
+    padding: 45px 0 0;
   }
   .posts-list{
    width: 100%;
@@ -848,6 +851,7 @@ section:nth-child(n + 2) {
   .new-posts{
     width: 100%;
     margin-top: 45px;
+    padding: 0;
   }
   .card {
     display: block;
@@ -862,12 +866,14 @@ section:nth-child(n + 2) {
   .author-info, .card-content{
     margin-top: 25px;
   }
+
   .shop{
+    max-width: 330px;
     margin: 0 auto;
+    padding: 0;
   }
   .shop_cards{
     display: block;
-    max-width: 360px;
     align-content: center;
   }
   .shop_card{
